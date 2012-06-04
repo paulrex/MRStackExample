@@ -1,0 +1,264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26EE5E28157D71A300FF90DB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EE5E27157D71A300FF90DB /* UIKit.framework */; };
+		26EE5E2A157D71A300FF90DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EE5E29157D71A300FF90DB /* Foundation.framework */; };
+		26EE5E2C157D71A300FF90DB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26EE5E2B157D71A300FF90DB /* CoreGraphics.framework */; };
+		26EE5E32157D71A300FF90DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 26EE5E30157D71A300FF90DB /* InfoPlist.strings */; };
+		26EE5E34157D71A300FF90DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EE5E33157D71A300FF90DB /* main.m */; };
+		26EE5E38157D71A300FF90DB /* SEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26EE5E37157D71A300FF90DB /* SEAppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		26EE5E23157D71A300FF90DB /* MRStackExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MRStackExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26EE5E27157D71A300FF90DB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		26EE5E29157D71A300FF90DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		26EE5E2B157D71A300FF90DB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		26EE5E2F157D71A300FF90DB /* MRStackExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MRStackExample-Info.plist"; sourceTree = "<group>"; };
+		26EE5E31157D71A300FF90DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		26EE5E33157D71A300FF90DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		26EE5E35157D71A300FF90DB /* MRStackExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MRStackExample-Prefix.pch"; sourceTree = "<group>"; };
+		26EE5E36157D71A300FF90DB /* SEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SEAppDelegate.h; sourceTree = "<group>"; };
+		26EE5E37157D71A300FF90DB /* SEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SEAppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26EE5E20157D71A200FF90DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EE5E28157D71A300FF90DB /* UIKit.framework in Frameworks */,
+				26EE5E2A157D71A300FF90DB /* Foundation.framework in Frameworks */,
+				26EE5E2C157D71A300FF90DB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26EE5E18157D71A200FF90DB = {
+			isa = PBXGroup;
+			children = (
+				26EE5E2D157D71A300FF90DB /* MRStackExample */,
+				26EE5E26157D71A300FF90DB /* Frameworks */,
+				26EE5E24157D71A300FF90DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26EE5E24157D71A300FF90DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26EE5E23157D71A300FF90DB /* MRStackExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26EE5E26157D71A300FF90DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26EE5E27157D71A300FF90DB /* UIKit.framework */,
+				26EE5E29157D71A300FF90DB /* Foundation.framework */,
+				26EE5E2B157D71A300FF90DB /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		26EE5E2D157D71A300FF90DB /* MRStackExample */ = {
+			isa = PBXGroup;
+			children = (
+				26EE5E36157D71A300FF90DB /* SEAppDelegate.h */,
+				26EE5E37157D71A300FF90DB /* SEAppDelegate.m */,
+				26EE5E2E157D71A300FF90DB /* Supporting Files */,
+			);
+			path = MRStackExample;
+			sourceTree = "<group>";
+		};
+		26EE5E2E157D71A300FF90DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				26EE5E2F157D71A300FF90DB /* MRStackExample-Info.plist */,
+				26EE5E30157D71A300FF90DB /* InfoPlist.strings */,
+				26EE5E33157D71A300FF90DB /* main.m */,
+				26EE5E35157D71A300FF90DB /* MRStackExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26EE5E22157D71A200FF90DB /* MRStackExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26EE5E3B157D71A300FF90DB /* Build configuration list for PBXNativeTarget "MRStackExample" */;
+			buildPhases = (
+				26EE5E1F157D71A200FF90DB /* Sources */,
+				26EE5E20157D71A200FF90DB /* Frameworks */,
+				26EE5E21157D71A200FF90DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MRStackExample;
+			productName = MRStackExample;
+			productReference = 26EE5E23157D71A300FF90DB /* MRStackExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26EE5E1A157D71A200FF90DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SE;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Mahipal Raythattha";
+			};
+			buildConfigurationList = 26EE5E1D157D71A200FF90DB /* Build configuration list for PBXProject "MRStackExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 26EE5E18157D71A200FF90DB;
+			productRefGroup = 26EE5E24157D71A300FF90DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26EE5E22157D71A200FF90DB /* MRStackExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26EE5E21157D71A200FF90DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EE5E32157D71A300FF90DB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26EE5E1F157D71A200FF90DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26EE5E34157D71A300FF90DB /* main.m in Sources */,
+				26EE5E38157D71A300FF90DB /* SEAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		26EE5E30157D71A300FF90DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26EE5E31157D71A300FF90DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26EE5E39157D71A300FF90DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		26EE5E3A157D71A300FF90DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26EE5E3C157D71A300FF90DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MRStackExample/MRStackExample-Prefix.pch";
+				INFOPLIST_FILE = "MRStackExample/MRStackExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		26EE5E3D157D71A300FF90DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MRStackExample/MRStackExample-Prefix.pch";
+				INFOPLIST_FILE = "MRStackExample/MRStackExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26EE5E1D157D71A200FF90DB /* Build configuration list for PBXProject "MRStackExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26EE5E39157D71A300FF90DB /* Debug */,
+				26EE5E3A157D71A300FF90DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26EE5E3B157D71A300FF90DB /* Build configuration list for PBXNativeTarget "MRStackExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26EE5E3C157D71A300FF90DB /* Debug */,
+				26EE5E3D157D71A300FF90DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26EE5E1A157D71A200FF90DB /* Project object */;
+}
