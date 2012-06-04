@@ -7,6 +7,8 @@
 //
 
 #import "SEAppDelegate.h"
+#import "SECloudDataSource.h"
+#import "SEQuestionsViewController.h"
 
 @implementation SEAppDelegate
 
@@ -21,8 +23,19 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
-    // Override point for customization after application launch.
+    
+    SECloudDataSource *dataSource = [[SECloudDataSource alloc] init];
+    
+    SEQuestionsViewController *qvc = [[SEQuestionsViewController alloc] initWithDataSource:dataSource];
+    
+    UINavigationController *nvc = [[UINavigationController alloc] initWithRootViewController:qvc];
+    [qvc release];
+    [dataSource release];
+
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = nvc;
+    [nvc release];
+
     [self.window makeKeyAndVisible];
     return YES;
 }

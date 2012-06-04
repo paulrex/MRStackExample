@@ -12,3 +12,19 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+// Debugging Helpers
+
+#ifdef MRDEBUG
+    #define DebugLog( s, ... ) NSLog( @"<%p %@:(%d)> %s | %@", self, [[NSString stringWithUTF8String:__FILE__] lastPathComponent], __LINE__, __FUNCTION__, [NSString stringWithFormat:(s), ##__VA_ARGS__] )
+#else
+    #define DebugLog( s, ... ) 
+#endif
+
+#define LogDatabaseError( ) DebugLog( @"%s", sqlite3_errmsg( database ) )
+
+// Because I'm too lazy to set up categories for simple one-liners...
+
+#define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+
