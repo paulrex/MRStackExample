@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "SEDataConsumer.h"
 
-@interface SEQuestionsViewController : UIViewController <SEDataConsumer>
+@interface SEQuestionsViewController : UIViewController <SEDataConsumer, UITableViewDelegate, UITableViewDataSource>
 
 
 @end

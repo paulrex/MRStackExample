@@ -8,6 +8,8 @@
 
 #import "SECloudDataSource.h"
 #import "AFHTTPRequestOperation.h"
+#import "SEQuestion.h"
+#import "SEConstants.h"
 
 @implementation SECloudDataSource
 
@@ -35,8 +37,6 @@
 
 - (void) refreshFeaturedQuestions
 {
-    // AFHTTPRequestOperation *op = [[[AFHTTPRequestOperation alloc] initWithRequest:r] autorelease];
-    
     NSDictionary *params = [[NSDictionary alloc] initWithObjectsAndKeys:
                             @"stackoverflow", @"site",
                             @"desc", @"order",
@@ -48,7 +48,7 @@
              success:
      ^(AFHTTPRequestOperation *operation, id responseObject)
     {
-        DebugLog(@"great success! operation %@, responseObject %@", operation, responseObject);
+        // DebugLog(@"great success! operation %@, responseObject %@", operation, responseObject);
         
         NSError *parseError = nil;
         NSDictionary *parsedResponse = [NSJSONSerialization JSONObjectWithData:responseObject options:0 error:&parseError];
@@ -60,6 +60,23 @@
         }
         
         DebugLog(@"%@", [parsedResponse objectForKey:@"items"]);
+        
+        NSMutableArray *parsedQuestions = [[NSMutableArray alloc] init];
+        for (NSDictionary *questionDict in [parsedResponse objectForKey:@"items"])
+        {
+            SEQuestion *q = [[SEQuestion alloc] initWithDataDictionary:questionDict];
+            [parsedQuestions addObject:q];
+            [q release];
+        }
+        
+        self.questions = parsedQuestions;
+        [parsedQuestions release];
+        
+        DebugLog(@"%@", self.questions);
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:kSEUpdatedFeaturedQuestionsNotification object:self];
+        
+        // TODO: Post a notification here!
     }
              
              failure:

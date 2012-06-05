@@ -67,6 +67,7 @@
 		26EE5E8E157D7D1600FF90DB /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
 		26EE5E8F157D7D1600FF90DB /* AFXMLRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFXMLRequestOperation.m; sourceTree = "<group>"; };
 		26EE5E90157D7D1600FF90DB /* UIImageView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+AFNetworking.m"; sourceTree = "<group>"; };
+		26EE5E9E157D87B700FF90DB /* SEConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SEConstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +122,7 @@
 				26EE5E54157D7AE500FF90DB /* SEQuestionsViewController.h */,
 				26EE5E55157D7AE500FF90DB /* SEQuestionsViewController.m */,
 				26EE5E2E157D71A300FF90DB /* Supporting Files */,
+				26EE5E9E157D87B700FF90DB /* SEConstants.h */,
 			);
 			path = MRStackExample;
 			sourceTree = "<group>";
